@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body id="hospitals">
+
+    <!--COPY NAVBAR ALL PAGES-->
+  <header class="header">
+        <a href="homepage.html" class="logo">Help fight COVID-19!</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+              <li><a class="menu" href="about.html">Contact</a></li>
+              <li><a class="menu" href="donate.html">Donate</a></li>
+              <li><a class="menu" href="covid.html">COVID-19</a></li>
+              <li><a class="menu" href="about.html">About</a></li>
+        </ul>
+    </header>
+    <!--NAVBAR END-->
+
+    <!--scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    <!--scroll to top button end-->
+
+    <div id="sideinfo">
+        <h4 id="hospital">
+            Alameda County
+        </h4>
+        <p id="subtext">
+            Hospitals
+        </p>
+        <p id="info1">
+            Hospitals throughout the Bay Area are in great need of PPE and medical supplies. Accepted items vary, so contact the location prior to making a donation.
+        </p>
+    </div>
+    <div id="maininfo">
+        <div class="line">
+            <h5>Oakland's Highland Hospital</h5>
+            <p class="main_text">
+                Drop off items between 7:30 a.m.-4:30 p.m.
+            </p>
+            <p class="address">
+                1411 E 31st Street
+                Oakland, CA 94602
+                K Building, 3rd Floor
+
+            </p>
+            <p class="main_text">Free parking is available. Residents are asked to pull up to handicap parking area.
+                Someone will meet you and take your name and phone number.
+                Call Vicky Lipscomb at <strong>(510) 437-4003</strong> for additional information.
+            </p>
+        </div>
+
+        <div class="line">
+            <h5>Alameda Health System</h5>
+            <p class="main_text">Donations are accepted between 8 a.m. - 4 p.m. at the following location.</p>
+            <p class="address">
+                Fairmont Hospital
+                Central Supply Service
+                15400 Foothill Boulevard
+                San Leandro, CA 94578
+
+            </p>
+        </div>
+
+        <div class="line">
+            <h5>Kaiser Permanente Oakland/East Bay</h5>
+            <p class="address">
+                3600 Broadway
+                Oakland, CA 94611
+
+            </p>
+            <p class="main_text">Contact <strong>Oakland.HCC@kp.org</strong> with "Supplies" in the subject line or call <strong>(510) 752-1000</strong>.
+            </p>
+        </div>
+        <div class="line">
+            <h5>Tiburcio Vasquez Health Center in Hayward</h5>
+            <p class="address">22331 Mission Blvd.
+                Hayward, CA 94541
+            </p>
+        </div>
+
+        <div class="line">
+            <h5>UCSF Benioff Children's Hospital Oakland
+            </h5>
+            <p class="address">747 52nd Street
+                Oakland, CA 94609
+                Ambassador Desk
+            </p>
+            <p class="main_text">UCSF asks to only donate specific items due to limited space.
+                Items should be unopened or in original packaging, unless otherwise specified.
+            </p>
+        </div>
+        <div class="line">
+            <h5>Berkeley hospitals</h5>
+            <p class="main_text">
+                Berkeley City Council member Rashi Kesarwani is coordinating donations for city hospitals and arranging for supplies to be picked up from the homes of Berkeley residents. </p>
+            <p class="main_text">Contact her office at <strong>510-981-7110</strong> or <strong>rkesarwani@cityofberkeley.info</strong>, or visit <a id="in_text" href="rashikesarwani.com/covid-19">rashikesarwani.com/covid-19</a> to fill out a donation form and arrange a pickup.
+
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

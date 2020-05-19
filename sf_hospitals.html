@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body id="hospitals">
+
+ <header class="header">
+        <a href="homepage.html" class="logo">Help fight COVID-19!</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+              <li><a class="menu" href="about.html">Contact</a></li>
+              <li><a class="menu" href="donate.html">Donate</a></li>
+              <li><a class="menu" href="covid.html">COVID-19</a></li>
+              <li><a class="menu" href="about.html">About</a></li>
+        </ul>
+    </header>
+
+    <!--scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--scroll to top button end-->
+
+    <div id="sideinfo">
+        <h4 id="hospital">
+            San Francisco County
+        </h4>
+        <p id="subtext">
+            Hospitals
+        </p>
+        <p id="info1">
+            Hospitals throughout the Bay Area are in great need of PPE and medical supplies. Accepted items vary, so contact the location prior to making a donation.
+        </p>
+    </div>
+    <div id="maininfo">
+        <div class="line">
+            <h5> Kaiser Permanente San Francisco</h5>
+            <p class="main_text">
+                Drop off: Mon – Fri 6AM – 2:30PM
+            </p>
+            <p class="address">
+                <strong>2130 O'Farrell St.
+                    San Francisco, CA 94115</strong>
+            </p>
+            <p class="main_text">Call <strong>(415) 833-2593</strong> and a staff member will come out to accept your donation.</p>
+            <p class="main_text">For large shipments or if you need to make arrangements after the loading dock closes at 2:30 p.m., contact the hospital operator at <strong>(415) 833-2000</strong>. The operator will get your contact information and you will be contacted within 24 hours to schedule a delivery.</p>
+        </div>
+
+        <div class="line">
+            <h5>Kaiser Permanente South San Francisco</h5>
+            <p class="main_text">Drop off items at the front desk Monday-Friday only.</p>
+            <p class="address">
+                <strong>1200 El Camino Real South San Francisco, CA 94080</strong>
+            </p>
+            <p class="main_text">The hospital is accepting N95 face masks. Call <strong>(650) 742-2000</strong> for further instructions.</p>
+        </div>
+
+        <div class="line">
+            <h5>Noe Valley Pediatrics</h5>
+            <p class="main_text">Donate anytime between 8:45 a.m. - to 5:30 p.m.
+            </p>
+            <p class="address">
+                <strong>3700 24th Street San Francisco, CA 94114
+                </strong>
+            </p>
+        </div>
+        <div class="line">
+            <h5> Saint Francis Memorial Hospital</h5>
+            <p class="address"><strong>900 Hyde St. San Francisco, CA 94109</strong></p>
+            <p class="main_text">
+                Email materials manager Avi Maharaj at <strong>Avinesh.Maharaj@dignityhealth.org</strong> or call <strong>(415) 353-6992</strong>. Please make sure donations are unused.
+
+            </p>
+        </div>
+
+        <div class="line">
+            <h5> San Francisco Veteran Affairs Medical Center
+            </h5>
+            <p class="main_text">
+                Email Joshua Shak at <strong>Shak@ucsf.edu</strong> for drop off instructions. </p>
+        </div>
+        <div class="line">
+            <h5> UCSF: Drop off donations at the following sites seven days a week from 8 a.m. to 5 p.m.</h5>
+            <p class="main_text ucsf">
+                UCSF Mission Center Building:
+            </p>
+            <p class="address">
+                <strong>1855 Folsom St. San Francisco, CA 94103</strong>
+            </p>
+            <p class="main_text">Entrance in the parking lot on Harrison at 15th</p>
+
+            <p class="main_text ucsf">
+                UCSF Mount Zion Medical Center: </p>
+            <p class="address">
+                <strong>1600 Divisadero St.
+                    San Francisco, CA 94115
+                    Semicircle driveway
+                </strong>
+            </p>
+            <p>UCSF is also asking for <a id="in_text" href="https://makeagift.ucsf.edu/site/SPageServer?pagename=API_RD_CHFSGivingForm&Primary=COVID-19%20Children%27s%20Response%20Fund&ACode=B8999&AppealCode=KDWZ3&utm_source=bch&utm_medium=website">financial donations</a> at this time.</p>
+        </div>
+
+        <div class="line">
+            <h5>Hospice by the Bay</h5>
+            <p class="address">
+                <strong>180 Redwood Street, Suite 350San Francisco, CA 94102
+                </strong>
+            </p>
+            <p class="main_text">Attention: PPE Donation
+                Donations can be mailed to or dropped off in-person between 8 a.m. - 5 p.m.
+            </p>
+        </div>
+
+        <div class="line">
+            <h5>Zuckerberg San Francisco General Hospital</h5>
+            <p class="address">
+                <strong>1001 Potrero Ave.San Francisco, CA 94110
+                </strong>
+            </p>
+            <p class="main_text">
+                Email <strong>decoding.injury@ucsf.edu</strong> for additional instructions.
+            </p>
+        </div>
+
+        <div class="line">
+            <h5>Chinese Hospital </h5>
+            <p class="main_text">Mail donations to:
+            </p>
+            <p class="address">
+                <strong>845 Jackson St., San Francisco, CA 94133
+                </strong>
+            </p>
+            <p class="main_text">
+                To make arrangements to deliver items in person at 835 Pacific Ave., call <strong>415-677-2470</strong> or email <strong>donate@chasf.org</strong>. A staff member can come out to accept your donation
+            </p>
+        </div>
+
+    </div>
+
+</body></html>

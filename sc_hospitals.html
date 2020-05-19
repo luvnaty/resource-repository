@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body id="hospitals">
+
+   <header class="header">
+        <a href="homepage.html" class="logo">Help fight COVID-19!</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+              <li><a class="menu" href="about.html">Contact</a></li>
+              <li><a class="menu" href="donate.html">Donate</a></li>
+              <li><a class="menu" href="covid.html">COVID-19</a></li>
+              <li><a class="menu" href="about.html">About</a></li>
+        </ul>
+    </header>
+    <!--scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--scroll to top button end-->
+
+    <div id="sideinfo">
+        <h4 id="hospital">
+            Santa Clara County
+        </h4>
+        <p id="subtext">
+            Hospitals
+        </p>
+        <p id="info1">
+            Hospitals throughout the Bay Area are in great need of PPE and medical supplies. Accepted items vary, so contact the location prior to making a donation.
+        </p>
+
+    </div>
+    <div id="maininfo">
+        <div class="line">
+            <h5>Kaiser Permanente Santa Clara Medical Center</h5>
+            <p class="address">700 Lawrence Expressway
+Santa Clara, CA 95051
+</p>
+       <p class="main_text">Email Jasprett Bajwa at <strong>jaspreet.bajwa@kp.org</strong> or call <strong>(408) 851-5622</strong> for further details.</p>
+        </div>
+
+        <div class="line">
+            <h5>Kaiser Permanente San Jose Medical Center</h5>
+            <p class="main_text">Drop off items Monday through Friday from 8:30 a.m. - 5 p.m.
+            </p>
+            <p class="address">250 Hospital Parkway
+San Jose, CA 95119
+Dept. of Orthopedics Building 4, 1st Floor
+</p>
+            <p class="main_text">Ask for Julie Ann, Eva, Dr. Walker or Dr. Reidel when you arrive at the hospital.
+For after hours and weekends, drop directly to ED staff standing outside by tent by ED entrance or if not there then at back of hospital by large yellow tent.
+</p>
+        </div>
+
+        <div class="line">
+            <h5>Valley Medical Center Foundation</h5>
+            <p class="main_text">Drop off donations Monday through Friday from 8 a.m. - 5 p.m.
+            </p>
+            <p class="address">
+                2400 Clove Dr., San Jose, CA 95128
+            </p>
+            <p class="main_text">Contact <strong>(408) 885-5299</strong> for a complete list of items</p>
+        </div>
+
+
+    </div>
+
+</body></html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body id="hospitals">
+
+<header class="header">
+        <a href="homepage.html" class="logo">Help fight COVID-19!</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+              <li><a class="menu" href="about.html">Contact</a></li>
+              <li><a class="menu" href="donate.html">Donate</a></li>
+              <li><a class="menu" href="covid.html">COVID-19</a></li>
+              <li><a class="menu" href="about.html">About</a></li>
+        </ul>
+    </header>
+
+    <!--scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--scroll to top button end-->
+
+    <div id="sideinfo">
+        <h4 id="hospital">
+            San Mateo County
+        </h4>
+        <p id="subtext">
+            Hospitals
+        </p>
+        <p id="info1">
+            Hospitals throughout the Bay Area are in great need of PPE and medical supplies. Accepted items vary, so contact the location prior to making a donation.
+        </p>
+    </div>
+    <div id="maininfo">
+        <div class="line">
+            <h5> San Mateo County Health Foundation</h5>
+            <p class="main_text">
+                The organization is accepting monetary donations to help with the COVID-19 outbreak.
+                For more information, <a id="in_text" href="https://smchf.org">click here!</a>
+            </p>
+        </div>
+
+        <div class="line">
+            <h5>Kaiser Permanente Redwood City Medical Center</h5>
+            <p class="main_text">Deliver items at the corner of 1100 Veterans Blvd, turn south on to Walnut Street
+                Go to the loading dock of Supply Chain (off of Walnut Street, behind the Emergency Dept.)
+                Redwood City, CA 94063
+            </p>
+            <p class="main_text">Contact Christine Emerson at <strong>650-299-7134</strong> for more information.</p>
+        </div>
+
+        <div class="line">
+            <h5>Seton Medical Centers</h5>
+            <p class="main_text">The Daly City hospital is accepting new N95 masks, surgical masks and face shields. Call <strong>650-991-6088</strong> or drop off items in person.
+            </p>
+            <p class="address">
+                <strong>1900 Sullivan Ave., Daly City, CA 94015
+                </strong>
+            </p>
+        </div>
+
+        <div class="line">
+            <h5>Stanford Health Care</h5>
+            <p class="main_text">
+                By mail:
+            </p>
+            <p class="address">Attention: Supply Donations Center
+                820 Quarry Rd. Extension
+                Palo Alto, CA 9430
+            </p>
+            <p class="main_text">
+                In person:
+            </p>
+            <p class="address">550 Broadway St.
+                Redwood City, CA 94063
+            </p>
+            <p class="main_text">
+                The facility is open seven days a week from 8 a.m. - 10 a.m. and 3 p.m - 5 p.m.
+                In-person donations are also accepted at Stanford Health Care - ValleyCare.
+
+            </p>
+            <p class="address">
+                1119 E. Stanley Boulevard
+                Livermore, CA 04550.
+            </p>
+            <p class="main_text">The facility is open from 8 a.m. - 5 p.m., Monday through Friday.
+            </p>
+        </div>
+
+
+    </div>
+
+</body></html>

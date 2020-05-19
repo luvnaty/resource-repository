@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body id="hospitals">
+
+     <header class="header">
+        <a href="homepage.html" class="logo">Help fight COVID-19!</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+              <li><a class="menu" href="about.html">Contact</a></li>
+              <li><a class="menu" href="donate.html">Donate</a></li>
+              <li><a class="menu" href="covid.html">COVID-19</a></li>
+              <li><a class="menu" href="about.html">About</a></li>
+        </ul>
+    </header>
+    <!--scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--scroll to top button end-->
+
+    <div id="sideinfo">
+        <h4 id="hospital">
+            Contra Costa County
+        </h4>
+        <p id="subtext">
+            Hospitals
+        </p>
+        <p id="info1">
+            Hospitals throughout the Bay Area are in great need of PPE and medical supplies. Accepted items vary, so contact the location prior to making a donation.
+        </p>
+    </div>
+    <div id="maininfo">
+        <div class="line">
+            <h5>Donation Centers</h5>
+            <p class="main_text"><strong>West County:</strong> 151 Linus Pauling Drive, Hercules</p>
+            <p class="main_text"><strong>Central County:</strong> 1750 Oak Park Boulevard., Pleasant Hill</p>
+            <p class="main_text"><strong>East County:</strong> 4545 Delta Fair Boulevard., Antioch</p>
+        </div>
+
+        <div class="line">
+            <h5>Contra Costa Regional Medical Center</h5>
+            <p class="main_text">
+Donate items Monday through Friday from 8:30 a.m. - 4:30 p.m.
+
+            </p>
+            <p class="address">2500 Alhambra Avenue
+Martinez, CA 94553
+
+</p>
+            <p class="main_text">Email <strong>karin.stryker@cchealth.org</strong> with an expected time of arrival before shipping or dropping off.
+</p>
+        </div>
+
+        <div class="line">
+            <h5>John Muir Health</h5>
+            <p class="main_text">Donate at the Walnut Creek medical center's main entrance located at:
+            </p>
+            <p class="address">
+                1601 Ygnacio Valley Road
+Walnut Creek, CA 94598
+
+            </p>
+            <p class="main_text">For larger donations contact <strong>JMHdonations@johnmuirhealth.com</strong>.</p>
+        </div>
+
+    </div>
+
+</body></html>

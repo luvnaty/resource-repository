@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    margin:0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #ffffff;
+}
+
+body#donate{
+    background-image: url(); 
+    background-size: cover;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #fada5e;
+    color: #ffffff;
+    font-weight:600;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+a.menu{
+    color:#ffffff;
+
+}
+
+a.logo {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+/*HAMBURGER MENU*/
+
+.header{
+    background-color: #33B5E5;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fada5e;
+}
+
+.header ul a{
+    display: block;
+    outline: #fff;
+    padding: 20px 0;
+    border-right: 1px solid #aaa;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header ul a:hover{
+    color: #ddd;
+}
+
+.header .logo{
+    float: left;
+    display: block;
+    font-size: 1.3em;
+    font-style: italic;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.header .menu{
+    clear:both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+    background: #fff;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+    background: #fff;
+    content:"";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 6px;
+}
+
+.header .menu-icon .nav-icon:after{
+    background: #fff;
+    content:"";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -6px;
+}
+
+.header .menu-btn{
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+   background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width:48em){
+    
+    .header li{
+        float: left;
+    }
+    .header li a{
+        padding: 20px 30px;
+    }
+    
+    .header .menu{
+        clear:none;
+        float:right;
+        max-height:none;
+        background-color: #33B5E5;
+    }
+    .header .menu-icon{
+        display: none;
+    }
+}
+
+/*HOMEPAGE*/
+
+div#call_to_action {
+    height: 75%;
+    text-overflow: hidden;
+    background-image: url(images/homepage.jpeg);
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+    padding: 10% 5% 10% 5%;
+}
+
+h1 {
+    display: inline-block;
+    width: 60%;
+    max-width: 650px;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color:aliceblue;
+    text-shadow: 1px 1px 10px rgb(43,45,47, 0.5);
+}
+
+div#donate {
+    height: 20%;
+    text-align: center;
+    margin: 4.5% 0;
+}
+
+a#button {
+    padding: 2%;
+    height: 30%;
+    width: 35%;
+    background-color: #33B5E5;
+    border-radius: 45px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 30px;
+
+}
+
+p#cta {
+    color:#ffffff;
+    margin: -10px 0 0;
+    font-size: 20pt;
+}
+/*ABOUT*/
+
+div#container1{
+    text-align: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+h3#about {
+    text-align: center;
+    margin-top: 0;
+}
+
+p.p2 {
+    display:inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 0 20%;
+    margin-top: 1%;
+}
+
+
+/*COVID*/
+
+div#grid {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 39% 59%;
+    width: 99%;
+}
+
+div#float{
+    display: none;
+}
+div.grid-area {
+    color: #fff;
+    padding: 100px 25px;
+    text-align: left;
+}
+
+h3{
+    color: #000000;
+}
+
+p.p1 {
+    color: #000000;
+    max-width: 1000px;
+}
+
+p.caption{
+    color: #cccccc;
+    font-size: 12px;
+    
+}
+
+img#covid{
+    width: 100%;
+}
+
+/*DONATE*/
+
+h4#donations{
+    font-size: 16pt;
+    margin-bottom: 0;
+}
+
+div#sideinfo2{
+    float: left;
+    width: 20%;
+    min-width: 250px;
+    margin: 10% 0 5% 23%;
+    padding: 30px 30px;
+    color: #ffffff;
+    background-color: #33B5E5;
+}
+
+div#maininfo2{
+    float: left;
+    margin: 10% 0 0 2%;
+    width: 30%;
+    background-color: #ffffff;
+    padding: 0;
+    height: 20%px;
+}
+
+li.donate{
+    list-style: none;
+    padding: 5%;
+}
+
+a.donate{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+a.donate:hover{
+    color: #fada5e;
+   
+}
+
+/*HOSPITALS*/
+
+body#hospitals{
+    background-image: url(images/hospital.jpeg);
+    background-size: cover;
+    margin: 0;
+}
+
+div#sideinfo, div#maininfo{
+    margin: 8% 0;
+    float: left;
+}
+
+div#sideinfo{
+    width: 19%;
+    background-color: #33B5E5;
+    margin-left: 5%;
+    margin-right: 1%;
+    padding: 0 30px 30px;
+    color: #ffffff;
+}
+
+div#maininfo{
+    width: 59%;
+    background-color: #ffffff;
+    margin-right: 5%;
+    padding: 0 2% 2%;
+    margin-left: 1%;
+}
+
+h4#hospital{
+    font-size: 16pt;
+    margin-bottom: 0;
+}
+
+p#subtext{
+    margin-top:0;
+}
+p#info1{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: thin;
+    border-bottom-width: thin;
+    padding: 5% 0;
+}
+
+
+div.line{
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    padding-bottom: 3%;
+}
+
+h5{
+    font-size: 14pt;
+    margin-bottom: 0;
+}
+
+p.main_text{
+    max-width: 780px;
+}
+
+p.address{
+    max-width: 200px;
+    font-weight: 800
+}
+
+p.ucsf{
+    text-decoration: underline;
+}
+
+a#in_text{
+    color: #fada5e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a#in_text:hover{
+    color: #33B5E5;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+/*HOMEPAGE*/
+    div#call_to_action {
+    height: 350px;
+}
+    h1 {
+    font-size: 45px;
+    padding-top: 5%
+}
+    div#donate {
+    height: %;
+    text-align: center;
+    margin: 10% 0;
+}
+
+a#button {
+    padding: 2%;
+    background-color: #33B5E5;
+    border-radius: 25px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 20px;
+
+}
+
+
+/*COVID*/
+    div#grid {
+        display: none;
+    }
+    div#float {
+        display: contents;
+        justify-content: left;
+    }
+    div.container4{
+    color: #000000;
+    padding: 5% 5% 0;
+    font-size: 14px;
+    }
+    
+    ul.covid {
+        list-style: none;
+        margin-left: -40px;
+    }
+}
+    
+
+@media only screen and (max-width: 1000px){
+    
+    /*HOSPITALS*/
+    body#hospitals{
+        background-image: none;
+    }
+    div#maininfo, div#sideinfo{
+        float: none;
+        background-color: #ffffff;
+        color: #000000;
+        width: 80%;
+    }
+    
+    div#maininfo{
+        margin: 0 5% 0;
+        padding: 0 5% 5%;
+    }
+    
+    div#sideinfo{
+        margin: 0 5%;
+        padding: 100px 5% 0;
+    }
+    
+    h4#hospital{
+        color: #fada5e;
+        margin: 0 0 2%;
+    }
+    
+    p#info1{
+        padding: 2% 0;
+}
+    
+    h4#donations{
+    font-size: 16pt;
+    margin-bottom: 0;
+}
+    div#sideinfo2{
+    background-color: #ffffff;
+    color: #000000;
+    width: 80%;
+    padding: 3% 10% 0;
+    height: 170px;
+    margin: 60px 0 0;
+}
+
+div#maininfo2{
+    padding: 0 5%;
+    width: 80%;
+    margin: 0;
+}
+
+li.donate{
+    padding: 4% 0;
+}
+    
+    }
+    
